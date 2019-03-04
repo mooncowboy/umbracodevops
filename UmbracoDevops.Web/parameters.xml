@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="FileSystemProviders configSource">
+    <parameterEntry kind="XmlFile" scope="Web.config"
+                    match="/configuration/umbracoConfiguration/FileSystemProviders/@configSource" />
+  </parameter>
+</parameters>

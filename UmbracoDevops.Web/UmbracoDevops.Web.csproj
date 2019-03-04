@@ -533,6 +533,7 @@
     <Content Include="uSync\data\Template\master\person\Person.config" />
     <Content Include="uSync\data\Template\master\products\Products.config" />
     <Content Include="uSync\data\Template\master\product\Product.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
