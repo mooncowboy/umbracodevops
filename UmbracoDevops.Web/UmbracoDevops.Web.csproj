@@ -381,7 +381,6 @@
     <Content Include="css\umbraco-starterkit-style.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="parameters.xml" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
     <Content Include="Web.config" />
   </ItemGroup>
