@@ -5,6 +5,7 @@
 
 trigger:
 - master
+- wip
 
 pool:
   vmImage: 'VS2017-Win2016'
@@ -20,6 +21,14 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+
+
+- task: ms-devlabs.utilitytasks.task-tokenizer.Tokenizer@2
+  displayName: 'Tokenizer: FileSystemProviders'
+  inputs:
+    SourcePath: UmbracoDevOps.Web/config/FileSystemProviders.config
+    ConfigurationJsonFile: '$(Build.Repository.LocalPath)\UmbracoDevops.Web\configTokens.json'
+
 
 - task: VSBuild@1
   inputs:
