@@ -1,0 +1,18 @@
+﻿{
+  "default": {
+    "CustomVariables": {
+    },
+    "ConfigChanges": [
+      {
+        "KeyName": "/FileSystemProviders/Provider/Parameters/add[@key='rootUrl']",
+        "Attribute": "value",
+        "Value": "__storageRootUrl__"
+      },
+      {
+        "KeyName": "/FileSystemProviders/Provider/Parameters/add[@key='connectionString']",
+        "Attribute": "value",
+        "Value": "__storageConnectionString__"
+      }
+    ]
+  }
+}
