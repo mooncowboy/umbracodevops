@@ -22,10 +22,11 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+
 - task: ms-devlabs.utilitytasks.task-tokenizer.Tokenizer@2
   displayName: 'Tokenizer: FileSystemProviders'
   inputs:
-    SourcePath: code/config/FileSystemProviders.config
+    SourcePath: UmbracoDevOps.Web/config/FileSystemProviders.config
     ConfigurationJsonFile: '$(Build.Repository.LocalPath)\UmbracoDevops.Web\configTokens.json'
 
 
