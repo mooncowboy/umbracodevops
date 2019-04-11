@@ -19,6 +19,12 @@ Sample project on how to have a fully automated CI/CD pipeline for Umbraco using
 
 Please open an issue if you come across a problem. Contributions are welcome, just fork the project and open a pull-request. 
 
+## References
+
+[https://aaronpowell.github.io/Chauffeur/deploy-vsts-azure.html](https://aaronpowell.github.io/Chauffeur/deploy-vsts-azure.html)
+
+[https://our.umbraco.com/forum/using-umbraco-and-getting-started/94398-usync-export-and-import-on-command-line](https://our.umbraco.com/forum/using-umbraco-and-getting-started/94398-usync-export-and-import-on-command-line)
+
 ## Disclaimer
 
 THIS CODE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
