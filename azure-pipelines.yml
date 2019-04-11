@@ -23,12 +23,18 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+# Copy ConnectionStrings.template.config to ConnectionStrings.config
+- task: CmdLine@2
+  inputs:
+    script: 'copy .\ConnectionStrings.template.config .\ConnectionStrings.config' 
+    workingDirectory: '$(Build.SourcesDirectory)\UmbracoDevops.Web'
+    failOnStderr: true
 
 - task: ms-devlabs.utilitytasks.task-tokenizer.Tokenizer@2
   displayName: 'Tokenizer: FileSystemProviders'
   inputs:
     SourcePath: UmbracoDevOps.Web/config/FileSystemProviders.config
-    ConfigurationJsonFile: '$(Build.Repository.LocalPath)\UmbracoDevops.Web\configTokens.json'
+    ConfigurationJsonFile: '$(Build.SourcesDirectory)\UmbracoDevops.Web\configTokens.json'
 
 
 - task: VSBuild@1
