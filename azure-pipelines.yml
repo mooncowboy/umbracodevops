@@ -26,8 +26,8 @@ steps:
 # Copy ConnectionStrings.template.config to ConnectionStrings.config
 - task: CmdLine@2
   inputs:
-    script: 'copy ConnectionStrings.template.config ConnectionStrings.config' 
-    workingDirectory: '$(Build.SourcesDirectory)'
+    script: 'copy .\ConnectionStrings.template.config .\ConnectionStrings.config' 
+    workingDirectory: '$(Build.SourcesDirectory)\UmbracoDevops.Web'
     failOnStderr: true
 
 - task: ms-devlabs.utilitytasks.task-tokenizer.Tokenizer@2
