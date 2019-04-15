@@ -2,6 +2,12 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "storageAccountName": {
+       "type": "string",
+       "metadata": {
+            "description": "Name of the storage account"
+        }
+    },
     "webAppName": {
       "type": "string",
       "metadata": {
@@ -53,6 +59,19 @@
       "dependsOn": [
         "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]"
       ]
+    },
+    {
+        "type": "Microsoft.Storage/storageAccounts",
+        "apiVersion": "2018-07-01",
+        "name": "[parameters('storageAccountName')]",
+        "location": "[resourceGroup().location]",
+        "tags": {
+            "displayName": "[parameters('storageAccountName')]"
+        },
+        "sku": {
+            "name": "Standard_LRS"
+        },
+        "kind": "StorageV2"
     }
   ]
 }
