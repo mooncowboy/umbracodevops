@@ -49,7 +49,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-steps:
 - task: CopyFiles@2
   displayName: 'Copy ARM templates'
   inputs:
