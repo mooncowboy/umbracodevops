@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoDevops.Web", "UmbracoDevops.Web\UmbracoDevops.Web.csproj", "{43E7EC4E-8CCA-48B2-A6D8-634E3BD4B693}"
 EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "ResourceGroup", "ResourceGroup\ResourceGroup.deployproj", "{1DAD4241-95E4-4460-A18C-CAEE8DFBACAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,12 @@ Global
 		{43E7EC4E-8CCA-48B2-A6D8-634E3BD4B693}.Release|Any CPU.Build.0 = Release|Any CPU
 		{43E7EC4E-8CCA-48B2-A6D8-634E3BD4B693}.Stage|Any CPU.ActiveCfg = Stage|Any CPU
 		{43E7EC4E-8CCA-48B2-A6D8-634E3BD4B693}.Stage|Any CPU.Build.0 = Stage|Any CPU
+		{1DAD4241-95E4-4460-A18C-CAEE8DFBACAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAD4241-95E4-4460-A18C-CAEE8DFBACAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAD4241-95E4-4460-A18C-CAEE8DFBACAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAD4241-95E4-4460-A18C-CAEE8DFBACAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAD4241-95E4-4460-A18C-CAEE8DFBACAE}.Stage|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAD4241-95E4-4460-A18C-CAEE8DFBACAE}.Stage|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
