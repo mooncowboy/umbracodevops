@@ -1,3 +1,5 @@
+[![Build Status](https://ricardofiel2.visualstudio.com/UmbracoDevops/_apis/build/status/theplastictoy.umbracodevops?branchName=master)](https://ricardofiel2.visualstudio.com/UmbracoDevops/_build/latest?definitionId=2&branchName=master)
+
 # Umbraco Devops
 
 Sample project on how to have a fully automated CI/CD pipeline for Umbraco using Azure Devops. Goals:
